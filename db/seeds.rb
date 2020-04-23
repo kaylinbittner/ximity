@@ -12,11 +12,11 @@ e = User.create(first_name: "Kaylin", last_name: "Bittner", email: "kaylinbittne
 
 puts 'Creating Offers ...'
 
-f = Offer.create(user: a, title: Faker::TvShows::RickAndMorty.location, description: Faker::TvShows::RickAndMorty.quote)
-g = Offer.create(user: b, title: Faker::TvShows::RickAndMorty.location, description: Faker::TvShows::RickAndMorty.quote)
-h = Offer.create(user: c, title: Faker::TvShows::RickAndMorty.location, description: Faker::TvShows::RickAndMorty.quote)
-i = Offer.create(user: d, title: Faker::TvShows::RickAndMorty.location, description: Faker::TvShows::RickAndMorty.quote)
-j = Offer.create(user: e, title: Faker::TvShows::RickAndMorty.location, description: Faker::TvShows::RickAndMorty.quote)
+f = Offer.create(user: a, title: Faker::TvShows::RickAndMorty.location, description: Faker::TvShows::RickAndMorty.quote, picture: "https://unsplash.it/300/200?random")
+g = Offer.create(user: b, title: Faker::TvShows::RickAndMorty.location, description: Faker::TvShows::RickAndMorty.quote, picture: "https://unsplash.it/300/200?random")
+h = Offer.create(user: c, title: Faker::TvShows::RickAndMorty.location, description: Faker::TvShows::RickAndMorty.quote, picture: "https://unsplash.it/300/200?random")
+i = Offer.create(user: d, title: Faker::TvShows::RickAndMorty.location, description: Faker::TvShows::RickAndMorty.quote, picture: "https://unsplash.it/300/200?random")
+j = Offer.create(user: e, title: Faker::TvShows::RickAndMorty.location, description: Faker::TvShows::RickAndMorty.quote, picture: "https://unsplash.it/300/200?random")
 
 puts 'Creating Requests ...'
 k = Request.create(user: a, offer: g, title: Faker::TvShows::RickAndMorty.location, description: Faker::TvShows::RickAndMorty.quote)
