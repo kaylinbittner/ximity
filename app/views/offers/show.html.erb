@@ -1,0 +1,5 @@
+<%-# We initialized @offer in the controller show method, so we can use it here -%>
+<%= @offer.title %> 
+<%= @offer.description %>
+<%-# `image_tag` is another rails helper, like `link_to`-%>
+<%= image_tag @offer.picture %>
