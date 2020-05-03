@@ -2,4 +2,9 @@
 <%= @offer.title %> 
 <%= @offer.description %>
 <%-# `image_tag` is another rails helper, like `link_to`-%>
-<%= image_tag @offer.picture %>
+<%-# image_tag @offer.picture %>
+
+<%= link_to 'Edit this Offer', edit_offer_path(@offer) %> 
+
+<%= link_to 'Back to all offers', offers_path %> 
+
