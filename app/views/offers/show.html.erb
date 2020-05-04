@@ -5,6 +5,6 @@
 <%-# image_tag @offer.picture %>
 
 <%= link_to 'Edit this Offer', edit_offer_path(@offer) %> 
-
+<%= link_to "Delete this Offer", offer_path(@offer), method: :delete %>
 <%= link_to 'Back to all offers', offers_path %> 
 
