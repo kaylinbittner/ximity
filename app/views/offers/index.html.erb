@@ -1,8 +1,11 @@
 <div>
-
-<% @offers.each do |o| %>
-<%= o.title %> - <%= o.description %>
-<img src=<%= o.picture %>/>
-<p> </p>
-<% end %>
+    <% @offers.each do |o| %>
+        <%-# The line below uses a Rails helper `link_to` -%>
+        <%-# It takes 2 arguments, the first is what you want the link to say - the second the path the link should take -%>
+        <%-# I want this link to go to the show page for o, so I pass in the instance of o so the route can extract the :id -%>
+        <%= link_to o.title, offer_path(o) %> - <%= o.description %>
+        <p> </p>
+    <% end %>
+    
+     <%= link_to 'Create a New Offer', new_offer_path %> 
 </div>
