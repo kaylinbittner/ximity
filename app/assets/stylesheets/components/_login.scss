@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+
+.col-6 {
+    justify-content: start;
+}
+
+.form-inputs {
+    text-align: left;
+    * {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+   
+}
+
