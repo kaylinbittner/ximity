@@ -1,10 +1,18 @@
-<div class="container">
+
   <%= simple_form_for @offer, :html => { class: 'form' } do |f| %>
-    <%= f.input :title %>
-    <%= f.input :description %>
-    <%= f.submit "Create My Offer", class: "btn btn-primary center-block" %> <br>
-  <% end %>
-  <div class="bottom">
-  <%= link_to "Return to Offers List", offers_path, class: "btn btn-success center-block" %>
-  </div>
+    <div class="form-inputs">
+      <%= f.input :title %>
+      <%= f.input :description %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit, "Create My Offer", class: "btn btn-primary text-center my-3" %>
+    </div>
+<% end %>
+
+<div class="row bottom">
+  <%= link_to "Return to Offers List", offers_path, class: "btn mt-3 border" %>
 </div>
+  
+
+  
