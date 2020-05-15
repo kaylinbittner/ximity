@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    margin: 20px
+
+}
+
+.form-inputs {
+    text-align: left;
+    * {
+        margin-top: 10px;
+        margin-left: 10px;
+    }   
+}

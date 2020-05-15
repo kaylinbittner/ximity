@@ -1,0 +1,94 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+
+b, strong{
+    font-weight: 500;
+}
+
+
+/*===============================================
+* Hero
+================================================*/
+.hero {
+    height: 100vh;
+    min-height: 500px;
+    padding: 50px 0;
+
+}
+
+.hero .brand{
+    margin-top: 50px;
+}
+
+@media (max-width: 1024px){
+    .hero .brand {
+        margin-top: 0px; 
+    }
+}
+
+/*===============================================
+* Text Colors
+================================================*/
+.text-faded {
+    color: #FAFAFA;
+}
+.text-dark {
+    color: #192782;
+}
+.text-muted{
+    color: #999 !important;
+}
+.text-white {
+    color: #fff;
+}
+.text-primary {
+    color: #FE7472 !important;
+}
+.text-primary-light{
+    color: rgba(254, 116, 114, 0.788);
+}
+/*===============================================
+* Colored Buttons
+================================================*/
+.btn{
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.15);
+    -webkit-transition: 350ms ease all;
+    transition: 350ms ease all;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: .6rem 1.5rem;
+}
+.btn:hover, .btn:focus {
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.15);
+}
+.btn-white {
+    color: #FE7472 !important;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-white:hover{
+    color: #FE7472;
+}
+.btn-primary{
+    background-color: #FE7472 !important;
+    border-color: #FE7472 !important;
+}
+.btn-primary:hover, .btn-primary:focus{
+    color: #fff !important;
+}
+.btn-radius{
+    border-radius: 50px;
+}
