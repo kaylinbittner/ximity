@@ -1,3 +1,56 @@
 <section>
     <%= render 'shared/banner' %>
 </section>
+<section class="row d-flex">
+
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title mb-3">Current Needs Posted</h5>
+                <ul>
+                    <li>
+                        <h6 class="card-subtitle text-muted">Ilsa needs someone to come shovel her front walk</h6>
+                    </li>
+                    <li>
+                        <h6 class="card-subtitle text-muted">Max needs a ride to the pharmacy</h6>
+                    </li>
+                    <li>
+                        <h6 class="card-subtitle text-muted">Jerome is looking for help with planting tomatoes</h6>
+                    </li>
+                </ul>
+                <div class="row justify-content-start">
+                    <%= link_to "I Want to Help", offers_path, class: "btn btn-sm" %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title mb-3">Current Offers Posted</h5>
+                <ul>
+                    <li>
+                        <h6 class="card-subtitle text-muted">Janet is making COVID-19 face masks</h6>
+                    </li>
+                    <li>
+                        <h6 class="card-subtitle text-muted">Janelle can run to the grocery store</h6>
+                    </li>
+                    <li>
+                        <h6 class="card-subtitle text-muted">Don has extra white paint left over from a project</h6>
+                    </li>
+                </ul>
+                <div class="row justify-content-start">
+                    <%= link_to "I Need Help", offers_path, class: "btn btn-sm" %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</section>
