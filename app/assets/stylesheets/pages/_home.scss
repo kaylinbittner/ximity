@@ -1,1 +1,22 @@
 // Specific CSS for your home-page
+
+.card {
+  padding: 5px;
+  display: block;
+  height: auto
+}
+
+.card-body {
+    justify-content: center;
+}
+
+.card-subtitle {
+  margin-bottom: 15px;
+  margin-left: 25px;
+}
+
+.btn {
+    background-color: $pink;
+    color: white;
+    margin: 10px 0 0 0;
+}

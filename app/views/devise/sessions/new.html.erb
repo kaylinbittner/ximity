@@ -1,6 +1,6 @@
 <div class="row">
-  <div class="card">
-    <h2 class="my-3">Log in</h2>
+  <div class="card p-4">
+    <h2 class="text-center">Log in</h2>
 
     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'simple-form'}) do |f| %>
     <div class="form-inputs">
@@ -15,7 +15,7 @@
       <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
     </div>
 
-    <div class="form-actions my-4">
+    <div class="form-actions my-4 text-center">
       <%= f.button :submit, "Log in", class: "btn btn-primary" %>
     </div>
 

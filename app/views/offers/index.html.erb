@@ -1,13 +1,15 @@
-<div class="row"> 
-
+<div class="row justify-content-center"> 
+        <%= link_to 'Create a New Offer', new_offer_path, class: "btn btn-primary" %>
+   </div>
+<div class="row">
     <div class="column">
       <div class="card offer-card">
           <% @offers.each do |o| %>
               <%-# The line below uses a Rails helper `link_to` -%>
               <%-# It takes 2 arguments, the first is what you want the link to say - the second the path the link should take -%>
               <%-# I want this link to go to the show page for o, so I pass in the instance of o so the route can extract the :id -%>
-              <%= link_to o.title, offer_path(o) %> - <%= o.description %>
-              <p> </p>
+              <h5> <%= link_to o.title, offer_path(o) %> </h5> 
+              <p> <%= o.description %> </p>
           <% end %>
           
           <%= link_to 'Create a New Offer', new_offer_path %> 
@@ -15,13 +17,13 @@
     </div>
 
     <div class="column">
-      <div class="card offer-card">
+      <div class="card">
           <% @offers.each do |o| %>
               <%-# The line below uses a Rails helper `link_to` -%>
               <%-# It takes 2 arguments, the first is what you want the link to say - the second the path the link should take -%>
               <%-# I want this link to go to the show page for o, so I pass in the instance of o so the route can extract the :id -%>
-              <%= link_to o.title, offer_path(o) %> - <%= o.description %>
-              <p> </p>
+            <h5> <%= link_to o.title, offer_path(o) %> </h5>
+              <p> <%= o.description %> </p>
           <% end %>
           
           <%= link_to 'Create a New Offer', new_offer_path %> 
@@ -29,13 +31,13 @@
     </div>
 
     <div class="column">
-      <div class="card offer-card">
+      <div class="card">
           <% @offers.each do |o| %>
               <%-# The line below uses a Rails helper `link_to` -%>
               <%-# It takes 2 arguments, the first is what you want the link to say - the second the path the link should take -%>
               <%-# I want this link to go to the show page for o, so I pass in the instance of o so the route can extract the :id -%>
-              <%= link_to o.title, offer_path(o) %> - <%= o.description %>
-              <p> </p>
+             <h5> <%= link_to o.title, offer_path(o) %> </h5> 
+              <p> <%= o.description %> </p>
           <% end %>
           
           <%= link_to 'Create a New Offer', new_offer_path %> 
@@ -43,13 +45,13 @@
     </div>
 
       <div class="column">
-      <div class="card offer-card">
+      <div class="card">
           <% @offers.each do |o| %>
               <%-# The line below uses a Rails helper `link_to` -%>
               <%-# It takes 2 arguments, the first is what you want the link to say - the second the path the link should take -%>
               <%-# I want this link to go to the show page for o, so I pass in the instance of o so the route can extract the :id -%>
-              <%= link_to o.title, offer_path(o) %> - <%= o.description %>
-              <p> </p>
+             <h5> <%= link_to o.title, offer_path(o) %> </h5> 
+              <p> <%= o.description %> </p>
           <% end %>
           
           <%= link_to 'Create a New Offer', new_offer_path %> 
