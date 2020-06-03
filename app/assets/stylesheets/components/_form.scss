@@ -4,17 +4,15 @@
 }
 
 .card {
-    justify-content: center;
-    
+    justify-content: center;  
+    padding: 40px
 }
 
 .form-inputs {
     text-align: left;
-
-    * {
-        margin-top: 10px;
-        margin-left: 10px;
-    }   
 }
 
-
+.row {
+    text-align: center;
+    
+}
