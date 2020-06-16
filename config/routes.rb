@@ -20,4 +20,20 @@ Rails.application.routes.draw do
   patch  "offers/:id",      to: "offers#update"
 
   delete "offers/:id",      to: "offers#destroy"
+
+
+
+  get    "requests",          to: "requests#index"
+
+  get    "requests/new",      to: "requests#new",  as: :new_request
+  post   "requests",          to: "requests#create"
+
+  # IMPORTANT: The `show` route needs to be *after* `new` route or else you will recieve a routing error
+  # Honestly, I cannot remember why this is so, but it is lol
+  get    "requests/:id",      to: "requests#show", as: :request
+
+  get    "requests/:id/edit", to: "requests#edit", as: :edit_request
+  patch  "requests/:id",      to: "requests#update"
+
+  delete "requests/:id",      to: "requests#destroy"
 end
