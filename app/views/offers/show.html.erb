@@ -1,18 +1,16 @@
 <div class="row">
-    <div class="card p-3">
-
+    <div class="card p-4">
         <%-# We initialized @offer in the controller show method, so we can use it here -%>
-        <h2><%= @offer.title %></h2>
-        <h5><%= @offer.description %></h5>
-
+        <h2 class="my-2"><%= @offer.title %></h2>
+        <h5 class="my-3"><%= @offer.description %></h5>
         <%-# `image_tag` is another rails helper, like `link_to`-%>
         <%-# image_tag @offer.picture %>
         <div class="row">
-            <%= link_to 'Edit this Offer', edit_offer_path(@offer), class: "btn-sm btn-primary p-2 shadow-sm text-white" %>
-                    <%= link_to "Delete this Offer", offer_path(@offer), method: :delete, class: "btn-sm btn-danger p-2 shadow-sm text-white" %>
-
+            <%= link_to 'Edit Offer', edit_offer_path(@offer), class: "btn-sm btn-primary px-3 shadow-sm text-white m-3" %>
+            <%= link_to "Delete Offer", offer_path(@offer), method: :delete, class: "btn-sm btn-danger px-3 shadow-sm text-white m-3" %>
         </div>
-
-        <%= link_to 'Back to all offers', offers_path, class: "btn-sm btn-outline-primary border-primary p-2 shadow-sm" %>
+        <div class="row text-center">
+        <%= link_to 'Back to All Offers', offers_path, class: "btn-sm border-primary px-3 shadow-sm text-center" %>
     </div>
+</div>
 </div>
